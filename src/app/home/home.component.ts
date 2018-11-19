@@ -12,9 +12,9 @@ export class HomeComponent implements OnInit {
   constructor( public api:ApiService, public router:Router ) { }
 
   ngOnInit() { 
-    if(localStorage.p2c_fcaHash == undefined ){
-      this.router.navigate(['/login']);
-    } 
+    // if(localStorage.p2c_fcaHash == undefined ){
+    //   this.router.navigate(['/login']);
+    // } 
   }
 
   generateTiciet(){

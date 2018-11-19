@@ -26,9 +26,9 @@ export class LoginComponent implements OnInit {
    }
 
   ngOnInit() {
-    if(localStorage.p2c_fcaHash != undefined ){
-      this.router.navigate(['/home']);
-    } 
+    // if(localStorage.p2c_fcaHash != undefined ){
+    //   this.router.navigate(['/home']);
+    // } 
   }
  
   submitValues(post){
