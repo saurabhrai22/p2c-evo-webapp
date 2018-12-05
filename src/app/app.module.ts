@@ -9,13 +9,14 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LogoutComponent } from './logout/logout.component';
 
 const appRoutes: Routes = [
   {path: '',	component: HomeComponent},
   {path: 'edit',	component: HomeComponent},
   {path: 'login',	component: LoginComponent},
-  {path: '**',	component: PageNotFoundComponent},
- 
+  {path: 'logout',	component: LogoutComponent },
+  {path: '**',	component: PageNotFoundComponent}
 ];
 
 
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
